@@ -21,4 +21,5 @@ from app5 import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.list,name='list'),
+    path('laks/',views.form1,name='form'),
 ]
