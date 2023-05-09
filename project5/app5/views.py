@@ -21,3 +21,23 @@ def form1(request):
         else:
             form=studentForm()
     return render(request,'form.html',{"form":form})
+
+
+def form2(request):
+    if (request.method=='POST'):
+        form = studentForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return list(request)
+    return render(request,'form2.html')
+
+
+def form3(request):
+    if (request.method=='POST'):
+        n = request.POST['n']
+        a = request.POST['a']
+        o = student.objects.create(name=n, age=a)
+        o.save()
+        return list(request)
+    return render(request,'form3.html')
+        
