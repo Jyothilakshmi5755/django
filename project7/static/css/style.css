@@ -1,0 +1,36 @@
+.bg-info{
+    text-align: center;
+    font-size: 70px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Darumadrop One', cursive;
+}
+.btn-group{
+    text-align: justify;
+    font-family: 'Caveat', cursive;
+}
+
+a{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 30px;
+}
+.a{
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.b{
+    text-align: center;
+    text-transform: capitalize;
+}
+.c{
+    text-align: center;
+    text-transform: capitalize;
+}
+.d{
+    text-transform:capitalize ;
+}
