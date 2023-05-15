@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 {% block body_block %}
 <div class="c">
-<h1>Login now</h1>
+<h1 class="e">login now</h1>
 <form method="post">
     {% csrf_token %}
 
         <p class="d">username:<input type="text" name="n"></p>
         <p class="d">password:<input type="text" name="p"></p>
-<input class="d" type="submit" value="login">
+<input class="f" type="submit" value="login">
 </form>
 </div>
 
