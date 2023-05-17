@@ -29,6 +29,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+EMAIL_BACKEND="django.core.mail.backends.console.EmailBackend"
 
 # Application definition
 
@@ -38,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles','app8',
+    'django.contrib.staticfiles',
+    'app8',
 ]
 
 MIDDLEWARE = [
@@ -52,6 +54,14 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'project8.urls'
+
+AUTH_USER_MODEL='app8.CustomUser'
+LOGIN_REDIRECT_URL="home"
+LOGOUT_REDIRECT_URL="login1"
+LOGIN_URL='login1'
+LOGOUT_URL='logout1'
+
+
 
 TEMPLATES = [
     {
