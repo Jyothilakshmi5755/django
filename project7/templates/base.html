@@ -26,6 +26,10 @@
         <a href="{% url 'password_change' %}" class="btn btn-primary">change password</a>
 
         <a href="{% url 'logout' %}" class="btn btn-primary">logout</a>
+
+        <a href="{% url 'view' %}" class="btn btn-primary">view</a>
+        <a href="{% url 'add' %}" class="btn btn-primary">Add</a>
+
         {% else %}
         <a href="{% url 'signup1' %}" class="btn btn-primary">signup</a>
         <a href="{% url 'login1' %}" class="btn btn-primary">login</a>
@@ -34,5 +38,10 @@
    {% block body_block %}
 
    {% endblock %}
+   <!--<h1>employ details</h1>
+<form method="post">
+    {{form.as_table}}
+    <input type="submit" id="x" value="login"></form>
+{% csrf_token %}-->
 </body>
 </html>

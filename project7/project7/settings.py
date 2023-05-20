@@ -52,7 +52,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'project7.urls'
-
+AUTH_USER_MODEL ='app7.CustomUser'
 LOGIN_REDIRECT_URL="home"
 LOGOUT_REDIRECT_URL="login1"
 LOGIN_URL='login1'
