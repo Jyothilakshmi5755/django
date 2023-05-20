@@ -82,3 +82,7 @@ def edit_emp(request,p):
             form.save()
             return view(request)
     return render(request,'add.html',{'form':form})
+
+def view_emp(request,p):
+    d=employee.objects.get(pk=p)
+    return render (request,'view_data.html', {"a":d})

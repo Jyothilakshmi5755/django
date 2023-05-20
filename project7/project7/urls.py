@@ -31,5 +31,6 @@ urlpatterns = [
     
     path('delete/<int:p>',views.delete_emp,name='delete_emp'),
     path('edit/<int:p>',views.edit_emp,name='edit_emp'),
+    path('viewdata/<int:p>',views.view_emp,name='view_emp'),
 
 ]

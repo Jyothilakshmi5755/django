@@ -19,7 +19,8 @@
         <td>{{i.place}}</td>
         <td>{{i.salary}}</td>
         <td><a href="{% url 'delete_emp' i.pk %}">Delete</a></td>
-        <td><a href="{% url 'edit_emp' i.pk%}">Edit</a></td>
+        <td><a href="{% url 'edit_emp' i.pk %}">Edit</a></td>
+        <td><a href="{% url 'view_emp' i.pk %}">View Data</a></td>
     </tr>
     {% endfor %}
 </table>

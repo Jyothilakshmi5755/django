@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block body_block %}
+<h1>view Data</h1>
+
+<table>
+    <tr>
+        <th>Employee id</th>
+        <td>{{a.Emp_id}}</td>
+    </tr>
+    <tr>
+        <th>Employee name</th>
+        <td>{{a.Emp_name}}</td>
+    </tr>
+    <tr>
+        <th>company name</th>
+        <td>{{a.company_name}}</td>
+    </tr>
+    <tr>
+        <th>place</th>
+        <td>{{a.place}}</td>
+    </tr>
+    <tr>
+        <th>Employee salary</th>
+        <td>{{a.salary}}</td>
+
+    </tr>
+    
+</table>
+{% endblock %}
